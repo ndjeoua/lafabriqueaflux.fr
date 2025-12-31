@@ -242,35 +242,35 @@ const { address, phone, email, form } = Astro.props;
                   submitBtn.innerText = 'Envoi en cours...';
 
                   const formData = new FormData(form);
-                  const data = Object.fromEntries(formData.entries());
-
-                  // Add metadata
-                  data.source = 'lafabriqueaflux.fr';
-                  data.page_url = window.location.href;
-                  data.user_agent = navigator.userAgent;
-                  data.submitted_at = new Date().toISOString();
-                  data.form_token = FORM_TOKEN; // Token envoyé dans le body plutôt que le header
+                  
+                  // Ajout des métadonnées directement dans FormData
+                  formData.append('source', 'lafabriqueaflux.fr');
+                  formData.append('page_url', window.location.href);
+                  formData.append('user_agent', navigator.userAgent);
+                  formData.append('submitted_at', new Date().toISOString());
+                  formData.append('form_token', FORM_TOKEN);
 
                   try {
+                    // Utilisation de multipart/form-data (natif) pour éviter les preflight CORS
                     const response = await fetch(N8N_WEBHOOK_URL, {
                       method: 'POST',
-                      headers: {
-                        'Content-Type': 'application/json'
-                      },
-                      body: JSON.stringify(data)
+                      body: formData
                     });
 
                     if (response.ok) {
                       messageDiv.innerText = 'Merci, votre demande a bien été envoyée ! Nous revenons vers vous rapidement.';
-                      messageDiv.classList.remove('hidden');
+                      messageDiv.classList.remove('hidden', 'bg-red-50', 'text-red-800');
                       messageDiv.classList.add('bg-green-50', 'text-green-800');
                       form.reset();
                     } else {
+                      const errorData = await response.text();
+                      console.error('Erreur n8n:', errorData);
                       throw new Error('Erreur serveur');
                     }
                   } catch (error) {
-                    messageDiv.innerText = "Désolé, une erreur est survenue (n8n non connecté ou erreur réseau). Vous pouvez nous contacter directement à contact@lafabriqueaflux.fr";
-                    messageDiv.classList.remove('hidden');
+                    console.error('Erreur réseau:', error);
+                    messageDiv.innerText = "Connexion à n8n impossible. Vérifiez que votre Webhook est bien en mode 'Listen' dans n8n, ou contactez-nous à contact@lafabriqueaflux.fr";
+                    messageDiv.classList.remove('hidden', 'bg-green-50', 'text-green-800');
                     messageDiv.classList.add('bg-red-50', 'text-red-800');
                   } finally {
                     submitBtn.disabled = false;
