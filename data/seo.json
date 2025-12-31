@@ -6,10 +6,10 @@
 	"author_email": "contact@lafabriqueaflux.fr",
 	"images": [
 		{
-			"image": "/images/_screenshot.png",
-			"description": "Screenshot for La Fabrique à Flux Template",
-			"height": 0,
-			"width": 0
+			"image": "/images/hero-flow.svg",
+			"description": "Illustration de flux automatisé - La Fabrique à Flux",
+			"height": 900,
+			"width": 1200
 		}
 	],
 	"_structures": {
