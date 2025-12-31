@@ -1,0 +1,81 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Hero from "@components/global/hero/hero.astro";
+import Feature from "@components/global/feature/feature.astro";
+import Counter from "@components/global/counter/counter.astro";
+---
+
+<Layout title="Accueil">
+  <Hero
+    title="Automatisez vos processus. Accélérez votre cash."
+    description="Relances factures, automatisations data & workflows sur mesure — sans complexité."
+    button={{ text: "Demander un échange", link: "/contact/" }}
+    image="/images/hero/hero-image.avif"
+    image_alt="Illustration Automatisation"
+  />
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-primary/5 rounded-xl border border-primary/10">
+          <h3 class="text-xl font-bold mb-4 text-primary">Moins d’impayés</h3>
+          <p class="text-gray-600">Relances automatiques et cadrées pour sécuriser votre trésorerie.</p>
+        </div>
+        <div class="p-6 bg-primary/5 rounded-xl border border-primary/10">
+          <h3 class="text-xl font-bold mb-4 text-primary">Moins de tâches répétitives</h3>
+          <p class="text-gray-600">Workflows n8n et intégrations pour libérer votre temps.</p>
+        </div>
+        <div class="p-6 bg-primary/5 rounded-xl border border-primary/10">
+          <h3 class="text-xl font-bold mb-4 text-primary">Plus de visibilité</h3>
+          <p class="text-gray-600">Suivi en temps réel et reporting clair sur vos opérations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Feature
+    title="Service phare : Relances factures automatisées"
+    description="Ne perdez plus de temps à courir après vos paiements. Nos systèmes automatisés s'occupent de tout pour vous, avec élégance et efficacité."
+    button={{ text: "Découvrir", link: "/services/relance-factures/" }}
+    image="/images/feature/feature-card-one.png"
+    image_alt="Relance Factures"
+  />
+
+  <section class="py-16 bg-primary/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold mb-12 text-primary">Comment ça marche</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <div class="text-4xl font-bold text-primary/20 mb-4">01</div>
+          <h4 class="text-xl font-bold mb-2">Audit rapide</h4>
+          <p class="text-gray-600">Analyse de vos flux actuels.</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-primary/20 mb-4">02</div>
+          <h4 class="text-xl font-bold mb-2">Mise en place</h4>
+          <p class="text-gray-600">Configuration de vos automatisations.</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-primary/20 mb-4">03</div>
+          <h4 class="text-xl font-bold mb-2">Optimisation & suivi</h4>
+          <p class="text-gray-600">Ajustements pour un résultat maximal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white border-y border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-lg text-gray-600 italic">"Approche structurée, orientée résultats. Intégration Brevo + outils existants."</p>
+    </div>
+  </section>
+
+  <section class="py-24 bg-primary text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 italic">Parlons de votre besoin</h2>
+      <a href="/contact/" class="inline-block bg-white text-primary font-bold px-8 py-4 rounded-xl hover:bg-gray-100 transition-colors">
+        Demander un échange
+      </a>
+    </div>
+  </section>
+</Layout>

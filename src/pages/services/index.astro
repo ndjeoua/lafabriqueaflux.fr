@@ -1,0 +1,38 @@
+---
+import Layout from "@layouts/Layout.astro";
+import SimpleHero from "@components/global/simple-hero/simple-hero.astro";
+import Feature from "@components/global/feature/feature.astro";
+---
+
+<Layout title="Nos Services">
+  <SimpleHero
+    title="Nos Services"
+    description="Des solutions sur mesure pour libérer votre temps et sécuriser vos revenus."
+  />
+
+  <Feature
+    title="Relances factures automatisées"
+    description="Récupérez votre trésorerie sans effort. Notre système automatise les relances tout en préservant la relation client."
+    button={{ text: "En savoir plus", link: "/services/relance-factures/" }}
+    image="/images/feature/feature-card-one.png"
+    image_alt="Relance Factures"
+  />
+
+  <Feature
+    title="Automatisation sur-mesure"
+    description="Workflows n8n, intégrations API et gestion de données. Nous connectons vos outils pour supprimer les tâches manuelles."
+    button={{ text: "Demander un devis", link: "/contact/" }}
+    image="/images/feature/feature-card-two.png"
+    image_alt="Automatisation"
+    reversed={true}
+  />
+
+  <section class="py-24 bg-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8">Un besoin spécifique ?</h2>
+      <a href="/contact/" class="inline-block border-2 border-primary text-primary font-bold px-8 py-4 rounded-xl hover:bg-primary/5 transition-colors">
+        Contactez-nous
+      </a>
+    </div>
+  </section>
+</Layout>

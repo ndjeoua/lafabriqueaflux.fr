@@ -13,7 +13,7 @@ content_blocks:
   - _name: global/simple-hero
     title: A plan for everyone
     description: >-
-      Sendit is easy to get started and we have a pricing plan for businesses of
+      La Fabrique à Flux is easy to get started and we have a pricing plan for businesses of
       all sizes.
   - _name: global/pricing-table
     pricing_tier:

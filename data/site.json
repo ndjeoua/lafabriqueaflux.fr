@@ -1,9 +1,9 @@
 {
   "site_title": "La Fabrique à Flux",
-  "description": "Automatisez vos processus, récupérez du temps. n8n, data & intégrations.",
+  "description": "Automatisation de processus (relances, data, workflows)",
   "favicon_icon": "/images/favicon.ico",
   "favicon_image": "/images/favicon.png",
   "twitter_site": "@lafabriqueaflux",
   "image": "/images/feature/feature-hero.png",
-  "image_alt": "Illustration La Fabrique à Flux"
+  "image_alt": "La Fabrique à Flux"
 }

@@ -1,13 +1,13 @@
 {
 	"site_name": "La Fabrique à Flux",
-	"site_title": "La Fabrique à Flux - Automatisation & Workflows",
-	"description": "Workflows n8n, data & intégrations (Brevo, Supabase, etc.) pour réduire les tâches manuelles.",
+	"site_title": "La Fabrique à Flux — Automatisation & Relances",
+	"description": "Automatisation de processus (relances, data, workflows).",
 	"author": "La Fabrique à Flux",
 	"author_email": "contact@lafabriqueaflux.fr",
 	"images": [
 		{
 			"image": "/images/_screenshot.png",
-			"description": "Screenshot for Sendit Template",
+			"description": "Screenshot for La Fabrique à Flux Template",
 			"height": 0,
 			"width": 0
 		}

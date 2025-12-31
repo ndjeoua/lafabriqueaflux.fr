@@ -12,17 +12,17 @@ seo:
 content_blocks:
   - _name: global/hero
     title: Run the best campaigns
-    description: Sendit will change the way you think about email and marketing automation.
+    description: La Fabrique à Flux will change the way you think about email and marketing automation.
     button:
       link: /signup
       text: Try This Free
     image: /images/feature/feature-hero.png
     image_alt: Charts
   - _name: global/header
-    title: "Sendit "
+    title: "La Fabrique à Flux "
     title_suffix: Features
     description: >-
-      Sendit is the most complete solution to create beautiful email designs,
+      La Fabrique à Flux is the most complete solution to create beautiful email designs,
       manage mails and send them out at the best price.
     remove_top_padding: false
   - _name: global/feature
@@ -52,7 +52,7 @@ content_blocks:
     image_alt: Upload box
     title: Free templates to get you started
     description: >-
-      Sendit is used by everyone from small businesses to fortune 500 companies.
+      La Fabrique à Flux is used by everyone from small businesses to fortune 500 companies.
       Browse our collection of email marketing templates and start sending
       beautiful emails in minutes.
     button:
@@ -71,20 +71,20 @@ content_blocks:
         author: Pete Fish
         designation: CMO at Clear Appeal
         message: >-
-          Sendit has taken Clear Appeal to the next level with its beautiful
+          La Fabrique à Flux has taken Clear Appeal to the next level with its beautiful
           email campaigns.
       - image: /images/testimonial/logo-3.jpg
         image_alt: Profile photo of Dolly Watson
         author: Dolly Watson
         designation: Digital Marketer at Time Cop
         message: >-
-          Wow, what a difference Sendit has made. My customers are more engaged
+          Wow, what a difference La Fabrique à Flux has made. My customers are more engaged
           than ever.
       - image: /images/testimonial/logo-4.jpg
         image_alt: Profile photo of Simon Moriarty
         author: Simon Moriarty
         designation: Head of Marketing at Pinnacle Mines
         message: >-
-          I can't imagine life without Sendit now, I have no idea how we were
+          I can't imagine life without La Fabrique à Flux now, I have no idea how we were
           surviving before.
 ---

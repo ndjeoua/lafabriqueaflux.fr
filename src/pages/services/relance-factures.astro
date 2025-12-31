@@ -1,0 +1,92 @@
+---
+import Layout from "@layouts/Layout.astro";
+import SimpleHero from "@components/global/simple-hero/simple-hero.astro";
+import Feature from "@components/global/feature/feature.astro";
+import FAQ from "@components/global/faq/faq.astro";
+
+const faqs = [
+  {
+    question: "Est-ce compatible avec Brevo ?",
+    answer: "Oui, nous utilisons l'identifiant API de Brevo pour envoyer des emails ultra-personnalisés et sécurisés."
+  },
+  {
+    question: "Puis-je valider avant l'envoi ?",
+    answer: "Absolument. Nous proposons un mode 'semi-automatique' où vous validez chaque relance d'un clic avant qu'elle ne parte."
+  },
+  {
+    question: "Qu'en est-il du RGPD ?",
+    answer: "Nous intégrons un lien d'opt-out dans chaque message et conservons des logs précis pour votre conformité."
+  }
+];
+---
+
+<Layout title="Relances factures automatisées">
+  <SimpleHero
+    title="Relances factures automatisées"
+    description="Les impayés plombent votre trésorerie et les relances manuelles vous font perdre du temps."
+  />
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold mb-6">Ce que vous obtenez</h2>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <span class="text-primary mt-1">✔</span>
+              <span>Détection automatique des factures en retard</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-primary mt-1">✔</span>
+              <span>Scénarios de relance (J+X) personnalisés</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-primary mt-1">✔</span>
+              <span>Opt-out client (stop relance) respectueux</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-primary mt-1">✔</span>
+              <span>Historique complet des relances</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-primary mt-1">✔</span>
+              <span>Reporting simple et visuel</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-primary/5 p-8 rounded-2xl border border-primary/10">
+          <h3 class="text-xl font-bold mb-4">Fonctionne avec</h3>
+          <div class="flex flex-wrap gap-4">
+            <span class="px-4 py-2 bg-white rounded-lg shadow-sm">Brevo (emails)</span>
+            <span class="px-4 py-2 bg-white rounded-lg shadow-sm">Excel / Google Sheets</span>
+            <span class="px-4 py-2 bg-white rounded-lg shadow-sm">Supabase / Notion</span>
+            <span class="px-4 py-2 bg-white rounded-lg shadow-sm">n8n (orchestration)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-primary/5">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-12 text-center text-primary">Questions fréquentes</h2>
+      <div class="space-y-6">
+        {faqs.map((faq) => (
+          <div class="bg-white p-6 rounded-xl shadow-sm italic">
+            <h4 class="font-bold mb-2 text-primary">{faq.question}</h4>
+            <p class="text-gray-600">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8">Prêt à accélérer votre cash ?</h2>
+      <a href="/contact/" class="inline-block bg-primary text-white font-bold px-8 py-4 rounded-xl hover:bg-primary/90 transition-colors">
+        Demander un échange
+      </a>
+    </div>
+  </section>
+</Layout>

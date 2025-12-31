@@ -1,0 +1,57 @@
+---
+import Layout from "@layouts/Layout.astro";
+import SimpleHero from "@components/global/simple-hero/simple-hero.astro";
+import Feature from "@components/global/feature/feature.astro";
+---
+
+<Layout title="Nos Projets">
+  <SimpleHero
+    title="Nos Projets"
+    description="Une approche structurée, orientée résultats, pour répondre à vos besoins métiers."
+  />
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="flex flex-col bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+          <div class="h-48 bg-primary/10 flex items-center justify-center italic text-primary font-bold">Relance Factures</div>
+          <div class="p-6 flex-1 flex flex-col">
+            <h3 class="text-xl font-bold mb-4">Relances factures automatisées</h3>
+            <p class="text-gray-600 mb-6 flex-1">Problème : Trésorerie bloquée et temps perdu. Solution : Workflow intelligent identifiant les retards et relançant automatiquement via Brevo.</p>
+            <a href="/services/relance-factures/" class="text-primary font-bold hover:underline italic">Voir le projet →</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flex flex-col bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+          <div class="h-48 bg-primary/10 flex items-center justify-center italic text-primary font-bold">Data & Reporting</div>
+          <div class="p-6 flex-1 flex flex-col">
+            <h3 class="text-xl font-bold mb-4">Automatisation data & reporting</h3>
+            <p class="text-gray-600 mb-6 flex-1">Problème : Données éparpillées et rapports manuels. Solution : Centralisation dans Supabase et dashboards de suivi automatisés.</p>
+            <span class="text-primary/50 font-bold italic">En cours</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flex flex-col bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+          <div class="h-48 bg-primary/10 flex items-center justify-center italic text-primary font-bold">Workflows Métiers</div>
+          <div class="p-6 flex-1 flex flex-col">
+            <h3 class="text-xl font-bold mb-4">Workflows métiers sur mesure</h3>
+            <p class="text-gray-600 mb-6 flex-1">Problème : Processus internes lourds et sans visibilité. Solution : Orchestration de vos outils existants via n8n.</p>
+            <span class="text-primary/50 font-bold italic">En cours</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-primary text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 italic">Votre projet pourrait être ici</h2>
+      <a href="/contact/" class="inline-block bg-white text-primary font-bold px-8 py-4 rounded-xl hover:bg-gray-100 transition-colors">
+        Lancer mon projet
+      </a>
+    </div>
+  </section>
+</Layout>

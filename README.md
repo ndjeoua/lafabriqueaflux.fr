@@ -1,8 +1,8 @@
-# Sendit
+# La Fabrique à Flux
 
-Sendit is a polished, marketing website template for Astro. Browse through a [live demo](https://top-quail.cloudvent.net/).
+La Fabrique à Flux is a polished, marketing website template for Astro. Browse through a [live demo](https://top-quail.cloudvent.net/).
 
-![Sendit template screenshot](public/images/_screenshot.png)
+![La Fabrique à Flux template screenshot](public/images/_screenshot.png)
 
 [![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/sendit-astro-template)
 
@@ -27,7 +27,7 @@ Sendit is a polished, marketing website template for Astro. Browse through a [li
 
 ## Develop
 
-Sendit is built with [Astro](https://astro.build/), [React](https://react.dev/), and [Tailwind CSS](https://tailwindcss.com/) for a modern, performant development experience.
+La Fabrique à Flux is built with [Astro](https://astro.build/), [React](https://react.dev/), and [Tailwind CSS](https://tailwindcss.com/) for a modern, performant development experience.
 
 ```bash
 npm install
@@ -43,7 +43,7 @@ npm run dev
 
 ## Editing
 
-Sendit features advanced visual editing capabilities with CloudCannon's split configuration, allowing for intuitive content management and real-time preview.
+La Fabrique à Flux features advanced visual editing capabilities with CloudCannon's split configuration, allowing for intuitive content management and real-time preview.
 
 ### Visual Editing
 

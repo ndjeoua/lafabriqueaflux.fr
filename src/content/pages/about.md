@@ -31,7 +31,7 @@ content_blocks:
   - _name: global/counter
     title: Built for your
     title_suffix: Business
-    description: We've built Sendit from the ground up the help grow your business faster.
+    description: We've built La Fabrique à Flux from the ground up the help grow your business faster.
     alternate_style: false
     numbers:
       - prefix: $
