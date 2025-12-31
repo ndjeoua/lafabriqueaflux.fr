@@ -26,16 +26,16 @@ const { title_suffix, description, FAQ, title } = Astro.props;
       <div class="w-full lg:w-2/3 text-center">
         <div class="mb-12 xl:mb-16">
           <Heading level={2} class="mb-6 tracking-tight">
-            <editable-text data-prop="title">{title}</editable-text>{" "}
+            {title}{" "}
             <span class="text-primary">
-              <editable-text data-prop="title_suffix">
+              
                 {title_suffix}
-              </editable-text>
+              
             </span>
           </Heading>
           {
             description && (
-              <div class="text-lg text-gray-600 leading-relaxed" data-editable="text" data-prop="description" set:html={md.render(description)} />
+              <div class="text-lg text-gray-600 leading-relaxed" set:html={md.render(description)} />
             )
           }
         </div>
@@ -45,17 +45,17 @@ const { title_suffix, description, FAQ, title } = Astro.props;
       FAQ?.length && (
         <div class="flex justify-center">
           <div class="w-full">
-            <div class="space-y-4 grid gap-3" data-editable="array" data-prop="FAQ">
+            <div class="space-y-4 grid gap-3">
               {
                 FAQ?.map((q: FaqItemData, i: number) => (
                   <template>
-                    <editable-array-item>
+                    
                       <FaqItem faq={q} i={i} />
-                    </editable-array-item>
+                    
                   </template>
-                  <editable-array-item>
+                  
                     <FaqItem faq={q} i={i} />
-                  </editable-array-item>
+                  
                 ))
               }
             </div>

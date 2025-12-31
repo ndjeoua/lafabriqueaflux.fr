@@ -136,9 +136,9 @@ export default function Navigation({ pageUrl }) {
               aria-label="Go to homepage"
             >
               <img
-                data-editable="image"
-                data-prop-src="logo"
-                data-prop-alt="logo_alt"
+
+
+
                 src={navigation.logo}
                 alt="Company logo"
                 className="h-12 w-auto max-w-[155px]"
@@ -233,8 +233,8 @@ export default function Navigation({ pageUrl }) {
                 className="lg:flex grid items-center gap-0 lg:gap-1.5 list-none lg:p-0 m-0 mb-6 lg:mb-0"
                 role="menubar"
                 aria-label="Main navigation links"
-                data-editable="array"
-                data-prop="nav_items"
+
+
               >
                 {navigation.nav_items.map((item, i) => {
                   return (
@@ -242,7 +242,7 @@ export default function Navigation({ pageUrl }) {
                       key={i}
                       className={`relative w-full grid  ${item.dropdown?.length ? "group" : ""}`}
                       role="none"
-                      data-editable="array-item"
+
                     >
                       {
                         item.dropdown?.length ? (
@@ -285,9 +285,7 @@ export default function Navigation({ pageUrl }) {
                               aria-expanded={openDropdown === i}
                               aria-controls={`dropdown-menu-${i}`}
                             >
-                              <editable-text data-prop="text">
-                                {item.text}
-                              </editable-text>
+                              {item.text}
                               <svg
                                 className={`ml-2 w-4 h-4 transition-transform duration-200 ${openDropdown === i ? "rotate-180" : ""}`}
                                 fill="none"
@@ -314,14 +312,14 @@ export default function Navigation({ pageUrl }) {
                               aria-labelledby={`dropdown-button-${i}`}
                               aria-hidden={openDropdown !== i}
                             >
-                              <div data-editable="array" data-prop="dropdown">
+                              <div>
                                 {item.dropdown.map((dropdown_item, j) => {
                                   return (
                                     <li
                                       key={j}
                                       className=""
                                       role="none"
-                                      data-editable="array-item"
+
                                     >
                                       <a
                                         data-astro-prefetch
@@ -361,9 +359,7 @@ export default function Navigation({ pageUrl }) {
                                         }}
                                         role="menuitem"
                                       >
-                                        <editable-text data-prop="dropdown_text">
-                                          {dropdown_item.dropdown_text}
-                                        </editable-text>
+                                        {dropdown_item.dropdown_text}
                                       </a>
                                     </li>
                                   );
@@ -379,9 +375,7 @@ export default function Navigation({ pageUrl }) {
                             onClick={closeMobileMenu}
                             role="menuitem"
                           >
-                            <editable-text data-prop="text">
-                              {item.text}
-                            </editable-text>
+                            {item.text}
                           </a>
                         )
                       }
@@ -401,9 +395,7 @@ export default function Navigation({ pageUrl }) {
                         onClick={closeMobileMenu}
                         role="menuitem"
                       >
-                        <editable-text data-prop="nav_btn.text">
-                          {navigation.nav_btn?.text}
-                        </editable-text>
+                        {navigation.nav_btn?.text}
                       </a>
                     </div>
                   ) : null}
@@ -417,9 +409,7 @@ export default function Navigation({ pageUrl }) {
                   href={`${navigation.nav_btn?.link}`}
                   className="inline-flex items-center px-6 py-3 text-base font-normal text-primary bg-secondary hover:bg-primary hover:text-secondary  border border-primary rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                 >
-                  <editable-text data-prop="nav_btn.text">
-                    {navigation.nav_btn?.text}
-                  </editable-text>
+                  {navigation.nav_btn?.text}
                 </a>
               </div>
             ) : null}

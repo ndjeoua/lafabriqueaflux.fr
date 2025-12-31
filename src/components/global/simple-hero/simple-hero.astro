@@ -17,9 +17,9 @@ const { title, description } = Astro.props;
       <div class="w-full lg:w-2/3 text-center">
         <div class="relative pb-4">
           <h2 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6 tracking-tight">
-            <editable-text data-prop="title">{title}</editable-text>
+            {title}
           </h2>
-          <div class="text-lg text-gray-600 leading-relaxed" data-editable="text" data-prop="description" set:html={md.render(description)} />
+          <div class="text-lg text-gray-600 leading-relaxed" set:html={md.render(description)} />
         </div>
       </div>
     </div>

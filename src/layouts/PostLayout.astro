@@ -49,8 +49,8 @@ const posts = await getCollection("blog");
               level={1}
               size={2}
               text={title}
-              data-editable="text"
-              data-prop="title"
+             
+             
               label="title"
               class="font-semibold font-sora text-gray-800 mb-6 2xl:w-3/5 xl:w-4/5 w-full mx-auto"
             />
@@ -70,7 +70,7 @@ const posts = await getCollection("blog");
                 <li
                   class="relative pl-2 ml-5 flex items-center before:absolute before:content-[''] before:bg-gray-400 before:w-0.5 before:h-4 before:-left-3.5 before:top-1/2 before:-translate-y-1/2">
                   <p class="mb-0 text-primary">
-                    <editable-text data-prop="author">{author}</editable-text>
+                    {author}
                   </p>
                 </li>
                 <li
@@ -89,9 +89,9 @@ const posts = await getCollection("blog");
               <div class=" mb-16 xl:mb-12 overflow-hidden">
                 <div class="max-w-[1200px] max-h-96  lg:max-h-[666px] w-full h-[666px]">
                   <Image
-                    data-editable="image"
-                    data-prop-src="featured_image.image"
-                    data-prop-alt="featured_image.image_alt"
+                   
+                   
+                   
                     width={1200}
                     height={666}
                     src={featured_image.image}
@@ -103,9 +103,9 @@ const posts = await getCollection("blog");
             )
           }
           <div class="max-w-4xl mx-auto prose lg:prose-xl">
-            <editable-text data-prop="@content">
+            
               <slot />
-            </editable-text>
+            
           </div>
         </article>
       </div>

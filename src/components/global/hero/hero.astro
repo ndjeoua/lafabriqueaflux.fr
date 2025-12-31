@@ -65,10 +65,10 @@ const hasSingleImage = image && image_alt;
 
   <div class="mx-auto max-w-[1500px] px-6 pt-10 pb-24 sm:pb-32 lg:flex lg:px-8 lg:py-40">
     <div class="mx-auto max-w-2xl shrink-0 lg:mx-0 lg:pt-8">
-      <Heading level={1} text={title} data-prop="title" data-editable="text" class="mb-6" />
-      <Text text={description} data-prop="description" data-editable="text" size="xl" markdown={true} class="text-pretty" />
+      <Heading level={1} text={title} class="mb-6" />
+      <Text text={description} size="xl" markdown={true} class="text-pretty" />
       <div class="mt-10 flex items-center gap-x-6">
-        {button && <Button href={button.link} variant={"primary"} size={"lg"} text={button.text} data-prop="button.text" data-editable="text" />}
+        {button && <Button href={button.link} variant={"primary"} size={"lg"} text={button.text} />}
       </div>
     </div>
     
@@ -76,19 +76,19 @@ const hasSingleImage = image && image_alt;
     <div class="mx-auto mt-16 grid max-w-2xl sm:mt-24 lg:mt-0 lg:mr-0 lg:ml-10 lg:max-w-none lg:flex-none">
       {hasMultipleImages ? (
         <!-- Multiple Images Layout (About Page Style) -->
-        <div class="grid grid-cols-[1fr_1fr_1fr_2fr] gap-5 max-w-3xl" data-editable="array" data-prop="hero_images">
+        <div class="grid grid-cols-[1fr_1fr_1fr_2fr] gap-5 max-w-3xl">
           {hero_images.map((heroImage, i) => (
             <div 
               class={getPlacementClass(heroImage.placement || "")}
-              data-editable="array-item"
+             
             >
               <div class="relative w-full h-full">
                 {
                   heroImage?.image && (
                     <Image
-                      data-editable="image"
-                      data-prop-src="image"
-                      data-prop-alt="image_alt"
+                     
+                     
+                     
                       src={heroImage.image}
                       alt={heroImage.image_alt || ""}
                       width={600}
@@ -117,9 +117,9 @@ const hasSingleImage = image && image_alt;
         <!-- Single Image Layout (Original Style) -->
         <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
           <Image
-            data-editable="image"
-            data-prop-src="image"
-            data-prop-alt="image_alt"
+           
+           
+           
             src={image}
             alt={image_alt || ""}
             width={1028}

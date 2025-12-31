@@ -42,9 +42,9 @@ const classes = `text-gray-600 prose ${sizeStyles[size]} ${className}`;
         <div class={classes} data-editable={dataEditable} data-prop={dataProp} set:html={md.render(text)} {...elementRest} />
       ) : (
         <p class={classes} {...elementRest}>
-          <editable-text data-editable={dataEditable} data-prop={dataProp}>
+          
             {text}
-          </editable-text>
+          
         </p>
       )
     ) : markdown ? (

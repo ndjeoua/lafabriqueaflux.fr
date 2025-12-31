@@ -48,9 +48,9 @@ const classes = `${baseClasses} ${variantClasses[variant]} ${variant === "link" 
     <a data-astro-prefetch href={href} class={classes} {...elementRest}>
       {text ? (
         dataEditable && dataProp ? (
-          <editable-text data-editable={dataEditable} data-prop={dataProp}>
+          
             {text}
-          </editable-text>
+          
         ) : (
           text
         )
@@ -67,9 +67,9 @@ const classes = `${baseClasses} ${variantClasses[variant]} ${variant === "link" 
     <button class={classes} {...elementRest}>
       {text ? (
         dataEditable && dataProp ? (
-          <editable-text data-editable={dataEditable} data-prop={dataProp}>
+          
             {text}
-          </editable-text>
+          
         ) : (
           text
         )

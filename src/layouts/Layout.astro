@@ -4,7 +4,6 @@ import Footer from "@components/layouts/footer.astro";
 import Navigation from "@components/layouts/navigation";
 import { SEO } from "astro-seo";
 import site from "@data/site.json";
-import ThemeEditableWrapper from "@components/shared/ThemeEditableWrapper";
 
 export interface SEOProps {
   page_description: string | null;
@@ -71,22 +70,11 @@ const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
     />
   </head>
   <body class="min-h-screen flex flex-col">
-    <script>
-      // Lazy load CloudCannon component registration only when in editor mode
-      if (window?.inEditorMode) {
-        import("../scripts/register-components.ts").catch((error) => {
-          console.warn("Failed to load CloudCannon component registration:", error);
-        });
-      }
-    </script>
-    <editable-component data-component="layouts/Navigation" data-prop="@data[navigation]">
-      <Navigation client:load pageUrl={canonicalURL} />
-    </editable-component>
+    <Navigation client:load pageUrl={canonicalURL} />
     <div class="flex-1">
       <slot />
     </div>
     <Footer />
 
-    <ThemeEditableWrapper client:only="react" />
   </body>
 </html>

@@ -19,12 +19,12 @@ const { title, title_suffix, description, remove_top_padding } = Astro.props;
       <div class="w-full lg:w-2/3 mx-auto">
         <div class={`text-center relative ${remove_top_padding ? "pt-0 pb-16" : "pt-12 sm:pt-24 xl:pt-36 2xl:pt-40 pb-16"}`}>
           <Heading level={2} class="pb-6">
-            <editable-text data-prop="title">{title}</editable-text>
+            {title}
             <span class="text-primary">
-              <editable-text data-prop="title_suffix">{title_suffix}</editable-text>
+              {title_suffix}
             </span>
           </Heading>
-          <Text text={description} data-prop="description" data-editable="text" markdown={true} size="lg" />
+          <Text text={description} markdown={true} size="lg" />
         </div>
       </div>
     </div>

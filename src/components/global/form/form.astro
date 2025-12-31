@@ -51,15 +51,15 @@ const { address, phone, email, form } = Astro.props;
           {address && (
             <div class="space-y-2">
               <h3 class="text-xl font-semibold text-gray-900">
-                <editable-text data-prop="address.heading">{address.heading}</editable-text>
+                {address.heading}
               </h3>
               <p 
                 class="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
               >
                 <Image
-                  data-editable="image"
-                  data-prop-src="address.image"
-                  data-prop-alt="address.image_alt"
+                 
+                 
+                 
                   src={address.image || "/images/default-address.png"}
                   alt={address.image_alt || "Address icon"}
                   loading="lazy"
@@ -67,7 +67,7 @@ const { address, phone, email, form } = Astro.props;
                   height={24}
                   class="w-6 h-6"
                 />
-                <editable-text data-prop="address.address">{address.address}</editable-text>
+                {address.address}
               </p>
             </div>
           )}
@@ -75,16 +75,16 @@ const { address, phone, email, form } = Astro.props;
           {phone && (
             <div class="space-y-2">
               <h3 class="text-xl font-semibold text-gray-900">
-                <editable-text data-prop="phone.heading">{phone.heading}</editable-text>
+                {phone.heading}
               </h3>
               <a 
                 href={`tel:${phone.cell}`}
                 class="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
               >
                 <Image
-                  data-editable="image"
-                  data-prop-src="phone.image"
-                  data-prop-alt="phone.image_alt"
+                 
+                 
+                 
                   src={phone.image || "/images/default-phone.png"}
                   alt={phone.image_alt || "Phone icon"}
                   loading="lazy"
@@ -92,7 +92,7 @@ const { address, phone, email, form } = Astro.props;
                   height={24}
                   class="w-6 h-6"
                 />
-                <editable-text data-prop="phone.cell">{phone.cell}</editable-text>
+                {phone.cell}
               </a>
             </div>
           )}
@@ -100,16 +100,16 @@ const { address, phone, email, form } = Astro.props;
           {email && (
             <div class="space-y-2">
               <h3 class="text-xl font-semibold text-gray-900">
-                <editable-text data-prop="email.heading">{email.heading}</editable-text>
+                {email.heading}
               </h3>
               <a 
                 href={`mailto:${email.email}`}
                 class="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
               >
                 <Image
-                  data-editable="image"
-                  data-prop-src="email.image"
-                  data-prop-alt="email.image_alt"
+                 
+                 
+                 
                   src={email.image || "/images/default-email.png"}
                   alt={email.image_alt || "Email icon"}
                   loading="lazy"
@@ -117,7 +117,7 @@ const { address, phone, email, form } = Astro.props;
                   height={24}
                   class="w-6 h-6"
                 />
-                <editable-text data-prop="email.email">{email.email}</editable-text>
+                {email.email}
               </a>
             </div>
           )}
@@ -132,21 +132,23 @@ const { address, phone, email, form } = Astro.props;
               class="absolute -top-[10%] -z-10 -left-[14%] w-[115%] h-full bg-primary/30"
               style="mask-image: url(/images/contact/effects.png); -webkit-mask-image: url(/images/contact/effects.png); mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat; mask-size: contain; -webkit-mask-size: contain;"
             ></div>
-            <form method="post" class="space-y-6">
+            <form id="contact-form" class="space-y-6">
               <h3 class="text-2xl font-bold text-gray-900 mb-8">
-                <editable-text data-prop="form.heading">{form.heading}</editable-text>
+                {form.heading}
               </h3>
               
+              <div id="form-message" class="hidden p-4 rounded-lg text-sm font-medium"></div>
+
               {form.fullname && (
                 <div class="space-y-2">
-                  <label for="Name" class="block text-sm font-medium text-gray-700">
-                    <editable-text data-prop="form.fullname.heading">{form.fullname.heading}</editable-text>
+                  <label for="full_name" class="block text-sm font-medium text-gray-700">
+                    {form.fullname.heading}
                   </label>
                   <input 
                     type="text" 
                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors" 
-                    id="Name" 
-                    name="name" 
+                    id="full_name" 
+                    name="full_name" 
                     placeholder={form.fullname.placeholder} 
                     required 
                   />
@@ -155,14 +157,14 @@ const { address, phone, email, form } = Astro.props;
 
               {form.phone_number && (
                 <div class="space-y-2">
-                  <label for="phone-number" class="block text-sm font-medium text-gray-700">
-                    <editable-text data-prop="form.phone_number.heading">{form.phone_number.heading}</editable-text>
+                  <label for="company" class="block text-sm font-medium text-gray-700">
+                    {form.phone_number.heading}
                   </label>
                   <input
-                    type="tel"
+                    type="text"
                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
-                    id="phone-number"
-                    name="phone-number"
+                    id="company"
+                    name="company"
                     placeholder={form.phone_number.placeholder}
                     required
                   />
@@ -172,13 +174,13 @@ const { address, phone, email, form } = Astro.props;
               {form.email && (
                 <div class="space-y-2">
                   <label for="email" class="block text-sm font-medium text-gray-700">
-                    <editable-text data-prop="form.email.heading">{form.email.heading}</editable-text>
+                    {form.email.heading}
                   </label>
                   <input 
                     type="email" 
                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors" 
                     id="email" 
-                    name="_replyto" 
+                    name="email" 
                     placeholder={form.email.placeholder} 
                     required 
                   />
@@ -188,11 +190,11 @@ const { address, phone, email, form } = Astro.props;
               {form.message && (
                 <div class="space-y-2">
                   <label for="message" class="block text-sm font-medium text-gray-700">
-                    <editable-text data-prop="form.message.heading">{form.message.heading}</editable-text>
+                    {form.message.heading}
                   </label>
                   <textarea
                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors resize-vertical"
-                    id="floatingTextarea2"
+                    id="message"
                     name="message"
                     placeholder={form.message.placeholder}
                     rows="6"
@@ -202,22 +204,81 @@ const { address, phone, email, form } = Astro.props;
               )}
 
               <!-- Honeypot field -->
-              <input type="text" name="_gotcha" class="hidden" />
+              <input type="text" name="website" class="hidden" tabindex="-1" autocomplete="off" />
 
               {form.submit_button && (
                 <div class="pt-4">
                   <Button
                     type="submit"
+                    id="submit-btn"
                     variant="primary"
                     size="lg"
                     text={form.submit_button.text}
-                    data-prop="form.submit_button.text"
-                    data-editable="text"
+                   
+                   
                     class="w-full sm:w-auto"
                   />
                 </div>
               )}
             </form>
+
+            <script is:inline>
+              const form = document.getElementById('contact-form');
+              const messageDiv = document.getElementById('form-message');
+              const submitBtn = document.getElementById('submit-btn');
+
+              // REMPLACER PAR VOTRE URL N8N
+              const N8N_WEBHOOK_URL = 'https://n8n.votredomaine.fr/webhook/contact'; 
+              const FORM_TOKEN = 'LFF_SECRET_TOKEN_2024';
+
+              if (form) {
+                form.addEventListener('submit', async (e) => {
+                  e.preventDefault();
+                  
+                  // Reset states
+                  messageDiv.classList.add('hidden');
+                  submitBtn.disabled = true;
+                  const originalBtnText = submitBtn.innerText;
+                  submitBtn.innerText = 'Envoi en cours...';
+
+                  const formData = new FormData(form);
+                  const data = Object.fromEntries(formData.entries());
+
+                  // Add metadata
+                  data.source = 'lafabriqueaflux.fr';
+                  data.page_url = window.location.href;
+                  data.user_agent = navigator.userAgent;
+                  data.submitted_at = new Date().toISOString();
+
+                  try {
+                    const response = await fetch(N8N_WEBHOOK_URL, {
+                      method: 'POST',
+                      headers: {
+                        'Content-Type': 'application/json',
+                        'X-Form-Token': FORM_TOKEN
+                      },
+                      body: JSON.stringify(data)
+                    });
+
+                    if (response.ok) {
+                      messageDiv.innerText = 'Merci, votre demande a bien été envoyée ! Nous revenons vers vous rapidement.';
+                      messageDiv.classList.remove('hidden');
+                      messageDiv.classList.add('bg-green-50', 'text-green-800');
+                      form.reset();
+                    } else {
+                      throw new Error('Erreur serveur');
+                    }
+                  } catch (error) {
+                    messageDiv.innerText = "Désolé, une erreur est survenue (n8n non connecté ou erreur réseau). Vous pouvez nous contacter directement à contact@lafabriqueaflux.fr";
+                    messageDiv.classList.remove('hidden');
+                    messageDiv.classList.add('bg-red-50', 'text-red-800');
+                  } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = originalBtnText;
+                  }
+                });
+              }
+            </script>
             
           </div>
         )}

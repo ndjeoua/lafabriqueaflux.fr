@@ -38,7 +38,7 @@ const { title, description, button, video } = Astro.props;
     </div>
 
     <!-- Main content - Vimeo embed -->
-    <div class="aspect-video" data-editable="component" data-prop-videoid="video" data-component="shared/Vimeo">
+    <div class="aspect-video" data-component="shared/Vimeo">
       {video && (
         <Vimeo videoid={video.video_url} title="Video Player" responsive={true} autoplay={true} class="w-full h-full" />
       )}
@@ -53,14 +53,14 @@ const { title, description, button, video } = Astro.props;
           <Heading 
             level={2}
             text={title}
-            data-prop="title"
-            data-editable="text"
+           
+           
             class="mb-6 tracking-tight"
           />
           <div 
             class="text-lg text-gray-600 leading-relaxed mb-8 prose prose-lg max-w-none" 
-            data-editable="text" 
-            data-prop="description" 
+            
+            
             set:html={md.render(description)} 
           />
           {button && (
@@ -69,8 +69,8 @@ const { title, description, button, video } = Astro.props;
               variant="secondary"
               size="lg"
               text={button.text}
-              data-prop="button.text"
-              data-editable="text"
+             
+             
               class="bg-white text-gray-900 border-2 border-gray-900 hover:bg-gray-900 hover:text-white"
             />
           )}
