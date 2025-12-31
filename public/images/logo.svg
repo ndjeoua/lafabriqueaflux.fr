@@ -1,1 +1,16 @@
-<svg fill="none" height="34" viewBox="0 0 34 34" width="34" xmlns="http://www.w3.org/2000/svg"><rect fill="#e63b2a" height="34" rx="8" width="34"/><path d="m11.5537 11.4066 9.02-3.01004c4.05-1.34999 6.25.86 4.91 4.90994l-3.01 9.02c-2.02 6.07-5.34 6.07-7.36 0l-.89-2.68-2.68-.89c-6.05994-2.01-6.05994-5.32.01-7.3499z" fill="#fff"/></svg>
+<svg width="240" height="40" viewBox="0 0 240 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icône -->
+  <g transform="translate(0, 0)">
+    <rect width="40" height="40" rx="8" fill="#E53935" fill-opacity="0.05"/>
+    <path d="M12 30V10H28" stroke="#E53935" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M24 6L28 10L24 14" stroke="#E53935" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M12 20H22" stroke="#E53935" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M20 17L23 20L20 23" stroke="#E53935" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M10 26L13 24L11 28L14 26" fill="#E53935"/>
+  </g>
+  
+  <!-- Texte -->
+  <text x="50" y="27" fill="#1A1A1A" style="font-family: sans-serif; font-weight: 800; font-size: 20px; letter-spacing: -0.5px;">
+    La Fabrique <tspan fill="#E53935">à Flux</tspan>
+  </text>
+</svg>

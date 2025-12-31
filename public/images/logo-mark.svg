@@ -1,0 +1,20 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Monogramme F stylisé avec flèches et flux -->
+  <!-- Fond arrondi discret pour la structure -->
+  <rect width="40" height="40" rx="8" fill="#E53935" fill-opacity="0.05"/>
+  
+  <!-- Forme principale du F (Flèche supérieure et corps) -->
+  <path d="M12 30V10H28L25 13M12 10H28" stroke="#E53935" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Flèche du haut -->
+  <path d="M24 6L28 10L24 14" stroke="#E53935" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Barre du milieu (Flèche courte) -->
+  <path d="M12 20H22L20 18M22 20L20 22" stroke="#E53935" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Étincelle / Éclair subtil -->
+  <path d="M10 26L13 24L11 28L14 26" fill="#E53935"/>
+  
+  <!-- Courbe de flux à la base -->
+  <path d="M12 30C12 34 18 34 20 30" stroke="#E53935" stroke-width="2" stroke-dasharray="2 2" stroke-linecap="round"/>
+</svg>
