@@ -1,48 +1,21 @@
 {
   "logo": "/images/logo.svg",
-  "logo_alt": "Company logo",
+  "logo_alt": "La Fabrique à Flux logo",
   "nav_items": [
     {
       "link": "/",
-      "text": "Home",
+      "text": "Accueil",
       "dropdown": []
     },
     {
-      "link": "/features/",
-      "text": "Features",
+      "link": "/services/",
+      "text": "Services",
       "dropdown": []
     },
     {
-      "link": "/pricing/",
-      "text": "Pricing",
+      "link": "/projets/",
+      "text": "Projets",
       "dropdown": []
-    },
-    {
-      "link": "/about/",
-      "text": "About",
-      "dropdown": []
-    },
-    {
-      "link": "/blog/",
-      "text": "Blog",
-      "dropdown": [
-        {
-          "dropdown_text": "All Articles",
-          "dropdown_link": "/blog/"
-        },
-        {
-          "dropdown_text": "Blog Showcase",
-          "dropdown_link": "/blog/blog-showcase/"
-        },
-        {
-          "dropdown_text": "Marketing",
-          "dropdown_link": "/tags/marketing/"
-        },
-        {
-          "dropdown_text": "Technology",
-          "dropdown_link": "/tags/technology/"
-        }
-      ]
     },
     {
       "link": "/contact/",
@@ -50,7 +23,7 @@
       "dropdown": []
     }
   ],
-  "enable_nav_btn": true,
+  "enable_nav_btn": false,
   "nav_btn": {
     "text": "Get Started",
     "link": "/signup/"
