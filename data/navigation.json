@@ -23,9 +23,9 @@
       "dropdown": []
     }
   ],
-  "enable_nav_btn": false,
+  "enable_nav_btn": true,
   "nav_btn": {
-    "text": "Get Started",
-    "link": "/signup/"
+    "text": "Demander un échange",
+    "link": "/contact/"
   }
 }

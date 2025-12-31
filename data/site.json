@@ -1,9 +1,9 @@
 {
-  "site_title": "Sendit",
-  "description": "A polished, marketing website template built with Astro",
+  "site_title": "La Fabrique à Flux",
+  "description": "Automatisez vos processus, récupérez du temps. n8n, data & intégrations.",
   "favicon_icon": "/images/favicon.ico",
   "favicon_image": "/images/favicon.png",
-  "twitter_site": "@twitter_site",
+  "twitter_site": "@lafabriqueaflux",
   "image": "/images/feature/feature-hero.png",
-  "image_alt": "An illustration of three email statistics modals stacked on top of each other, each with a slight offset."
+  "image_alt": "Illustration La Fabrique à Flux"
 }

@@ -11,15 +11,26 @@ seo:
   no_index: false
 content_blocks:
   - _name: global/hero
-    title: Beautiful web campaigns
+    title: Automatisez vos processus, récupérez du temps.
     description: >-
-      With Sendit, you can quickly create beautiful rich emails that capture a
-      reader's attention, engage them, and convert them into customers.
+      Workflows n8n, data & intégrations (Brevo, Supabase, etc.) pour réduire
+      les tâches manuelles et sécuriser vos opérations.
     image: /images/hero/hero-image.avif
-    image_alt: Reports dashboard
+    image_alt: Illustration Automatisation
     button:
-      text: Try This Free
-      link: /signup/
+      text: Demander un échange
+      link: /contact/
+  - _name: global/feature
+    image: /images/feature/feature-card-one.png
+    image_alt: Relance factures
+    title: "Service phare : Relance factures"
+    description: >-
+      Ne perdez plus de temps à courir après vos paiements. Nos systèmes automatisés
+      s'occupent de tout pour vous, avec élégance et efficacité.
+    button:
+      link: /services/relance-factures
+      text: Découvrir la solution
+    reversed: false
   - _name: global/counter
     title: Scale your
     title_suffix: Business

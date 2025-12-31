@@ -2,7 +2,7 @@
 _schema: default
 title: Services
 seo:
-  page_description:
+  page_description: "Découvrez nos solutions d'automatisation : relance factures, back-office, intégrations data."
   canonical_url:
   featured_image:
   featured_image_alt:
@@ -11,90 +11,49 @@ seo:
   no_index: false
 content_blocks:
   - _name: global/hero
-    title: On a mission to change email marketing
+    title: Nos Services
     description: >-
-      We're here to breathe new air into email marketing and help grow your
-      business.
-    hero_images:
-      - image: /images/about/aboutfeature-four.jpg
-        image_alt: Staff group photo
-        placement: back_top_left
-      - image: /images/about/aboutfeature-two.jpg
-        image_alt: People working on laptops
-        placement: front_bottom
-      - image: /images/about/aboutfeature-three.jpg
-        image_alt: Group working on a laptop
-        placement: back_top_right
-    button:
-      text: Try This Free
-      link: /signup
-  - _name: global/counter
-    title: Built for your
-    title_suffix: Business
-    description: We've built Sendit from the ground up the help grow your business faster.
-    alternate_style: false
-    numbers:
-      - prefix: $
-        number: '200'
-        suffix: m
-        text: Venture capital raised
-      - prefix:
-        number: '2016'
-        suffix:
-        text: Established in
-      - prefix:
-        number: '40'
-        suffix: +
-        text: Amazing team members
-      - prefix:
-        number: '4322'
-        suffix: +
-        text: Active users and growing
-  - _name: global/video-left-right
-    title: We love what we do
+      Des solutions sur mesure pour libérer votre temps et sécuriser vos revenus.
+    image: /images/about/aboutfeature-two.jpg
+    image_alt: Services La Fabrique à Flux
+  - _name: global/feature
+    image: /images/feature/feature-card-one.png
+    image_alt: Relance factures
+    title: 1) Relance factures automatisées (phare)
     description: >-
-      Our team has decades of experience working with email marketing campaigns
-      and we’re passionate about helping you connect with your customers.
+      Récupérez votre trésorerie sans effort. Notre système automatise les relances tout en préservant la relation client.
     button:
-      link: https://www.linkedin.com/
-      text: Follow on Linkedin
-    video:
-      image: /images/works/banner.jpg
-      image_alt: Thumbnail image for video
-      video_url: https://vimeo.com/45830194
-  - _name: global/team
-    title: Our leadership team
-    team_members:
-      - name: Nikolas Mcconnell
-        designation: Co-Founder & CEO
-        image: /images/team/1.jpg
-        image_alt: "Team member: Nikolas Mcconnell"
-      - name: Keiren Mcculloch
-        designation: CMO
-        image: /images/team/2.jpg
-        image_alt: "Team member: Keiren Mcculloch"
-      - name: Piers Reyes
-        designation: Head of Marketing
-        image: /images/team/3.jpg
-        image_alt: "Team member: Piers Reyes"
-      - name: Zachary Arias
-        designation: Co-founder & CTO
-        image: /images/team/4.jpg
-        image_alt: "Team member: Zachary Arias"
-      - name: Harmony Dunlop
-        designation: Head of Sales
-        image: /images/team/5.jpg
-        image_alt: "Team member: Harmony Dunlop"
-      - name: Elize Schwartz
-        designation: CRO
-        image: /images/team/6.jpg
-        image_alt: "Team member: Elize Schwartz"
-      - name: Coen Simmons
-        designation: Head of Design
-        image: /images/team/7.jpg
-        image_alt: "Team member: Coen Simmons"
-      - name: Fran Figureson
-        designation: Head of People
-        image: /images/team/8.jpg
-        image_alt: "Team member: Fran Figureson"
+      link: /services/relance-factures
+      text: En savoir plus
+    reversed: false
+  - _name: global/feature
+    image: /images/feature/feature-card-two.png
+    image_alt: Back-office
+    title: 2) Automatisation back-office
+    description: >-
+      Emails, CRM, reporting. Nous connectons vos outils pour supprimer les saisies manuelles.
+    button:
+      link: /contact
+      text: Demander un devis
+    reversed: true
+  - _name: global/feature
+    image: /images/feature/feature-card-three.png
+    image_alt: Intégrations
+    title: 3) Intégrations & data
+    description: >-
+      Supabase, APIs, Dashboards. Centralisez vos données pour prendre les bonnes décisions.
+    button:
+      link: /contact
+      text: Discuter d'un projet
+    reversed: false
+  - _name: global/feature
+    image: /images/feature/feature-card-one.png
+    image_alt: Sécurité
+    title: 4) Sécurité & bonnes pratiques (bientôt)
+    description: >-
+      Audits légers et mise en conformité de vos flux de données.
+    button:
+      link: /contact
+      text: Être prévenu
+    reversed: true
 ---

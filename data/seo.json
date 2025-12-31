@@ -1,9 +1,9 @@
 {
-	"site_name": "Sendit",
-	"site_title": "Sendit Template Astro",
-	"description": "A polished, marketing website template built with Astro.",
-	"author": "",
-	"author_email": "",
+	"site_name": "La Fabrique à Flux",
+	"site_title": "La Fabrique à Flux - Automatisation & Workflows",
+	"description": "Workflows n8n, data & intégrations (Brevo, Supabase, etc.) pour réduire les tâches manuelles.",
+	"author": "La Fabrique à Flux",
+	"author_email": "contact@lafabriqueaflux.fr",
 	"images": [
 		{
 			"image": "/images/_screenshot.png",
