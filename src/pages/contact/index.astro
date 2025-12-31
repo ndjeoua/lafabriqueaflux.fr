@@ -10,50 +10,27 @@ import Form from "@components/global/form/form.astro";
     description="Décrivez votre besoin d'automatisation ci-dessous. Nous revenons vers vous avec une approche concrète."
   />
 
-  <section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-        <div>
-          <h2 class="text-3xl font-bold mb-8 italic text-primary">Prenez contact</h2>
-          <p class="text-gray-600 text-lg mb-8 leading-relaxed">
-            Que vous ayez une idée précise ou simplement besoin d'aide pour identifier vos opportunités d'automatisation, parlons-en.
-          </p>
-          
-          <div class="space-y-8">
-            <div class="flex items-start gap-6">
-              <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary font-bold mt-1">@</div>
-              <div>
-                <h4 class="font-bold text-gray-900">Email direct</h4>
-                <a href="mailto:contact@lafabriqueaflux.fr" class="text-primary hover:underline text-lg">contact@lafabriqueaflux.fr</a>
-              </div>
-            </div>
-            
-            <div class="flex items-start gap-6">
-              <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary font-bold mt-1">✓</div>
-              <div>
-                <h4 class="font-bold text-gray-900">Promesse de réactivité</h4>
-                <p class="text-gray-600 italic">Audit express ou premier retour sous 24h à 48h maximum.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="relative">
-          <div class="absolute -inset-4 bg-primary/5 rounded-3xl -z-10 rotate-1"></div>
-          <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-xl">
-            <Form
-              form={{
-                heading: "Demander un échange",
-                fullname: { heading: "Nom & Prénom", placeholder: "Ex: Jean Dupont" },
-                phone_number: { heading: "Entreprise", placeholder: "Ex: Flux SARL" },
-                email: { heading: "Email professionnel", placeholder: "Ex: jean@flux.fr" },
-                message: { heading: "Quel est votre besoin ?", placeholder: "Décrivez brièvement votre processus à automatiser..." },
-                submit_button: { text: "Envoyer ma demande" }
-              }}
-            />
-          </div>
-        </div>
-      </div>
+  <Form
+    email={{
+      heading: "Email direct",
+      email: "contact@lafabriqueaflux.fr",
+      image: "/images/contact/directbox-send.svg",
+      image_alt: "Email icon"
+    }}
+    form={{
+      heading: "Demander un échange",
+      fullname: { heading: "Nom & Prénom", placeholder: "Ex: Jean Dupont" },
+      phone_number: { heading: "Entreprise", placeholder: "Ex: Flux SARL" },
+      email: { heading: "Email professionnel", placeholder: "Ex: jean@flux.fr" },
+      message: { heading: "Quel est votre besoin ?", placeholder: "Décrivez brièvement votre processus à automatiser..." },
+      submit_button: { text: "Envoyer ma demande" }
+    }}
+  />
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12 mb-20 text-center lg:text-left">
+    <div class="lg:ml-8">
+      <h4 class="font-bold text-gray-900 italic text-primary">Promesse de réactivité</h4>
+      <p class="text-gray-600 italic">Audit express ou premier retour sous 24h à 48h maximum.</p>
     </div>
-  </section>
+  </div>
 </Layout>
