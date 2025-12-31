@@ -4,7 +4,7 @@ La Fabrique à Flux is a polished, marketing website template for Astro. Browse 
 
 ![La Fabrique à Flux template screenshot](public/images/_screenshot.png)
 
-[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/sendit-astro-template)
+[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/lafabriqueaflux-astro-template)
 
 ## Features
 

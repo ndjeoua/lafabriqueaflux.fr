@@ -4,35 +4,42 @@ import SimpleHero from "@components/global/simple-hero/simple-hero.astro";
 import Feature from "@components/global/feature/feature.astro";
 ---
 
-<Layout title="Nos Services">
+<Layout title="Services | La Fabrique à Flux">
   <SimpleHero
-    title="Nos Services"
-    description="Des solutions sur mesure pour libérer votre temps et sécuriser vos revenus."
+    title="Libérez votre potentiel"
+    description="Nos services d'automatisation sont conçus pour supprimer les tâches à faible valeur ajoutée et sécuriser vos revenus."
   />
 
-  <Feature
-    title="Relances factures automatisées"
-    description="Récupérez votre trésorerie sans effort. Notre système automatise les relances tout en préservant la relation client."
-    button={{ text: "En savoir plus", link: "/services/relance-factures/" }}
-    image="/images/feature/feature-card-one.png"
-    image_alt="Relance Factures"
-  />
+  <div class="py-20 space-y-0">
+    <Feature
+      title="Relances factures automatisées"
+      description="Récupérez votre trésorerie sans effort. Scénarios de relance intelligents, personnalisation par client et reporting en temps réel."
+      button={{ text: "Découvrir la solution détaillée", link: "/services/relance-factures/" }}
+      image="/images/feature/feature-card-one.png"
+      image_alt="Relance Factures"
+    />
 
-  <Feature
-    title="Automatisation sur-mesure"
-    description="Workflows n8n, intégrations API et gestion de données. Nous connectons vos outils pour supprimer les tâches manuelles."
-    button={{ text: "Demander un devis", link: "/contact/" }}
-    image="/images/feature/feature-card-two.png"
-    image_alt="Automatisation"
-    reversed={true}
-  />
+    <Feature
+      title="Workflows & Automatisations"
+      description="Connectez vos outils (CRM, Mailing, Gestion) pour automatiser vos tâches répétitives via n8n. Gain de temps garanti."
+      button={{ text: "Parlons de vos besoins", link: "/contact/" }}
+      image="/images/feature/feature-card-two.png"
+      image_alt="Workflows n8n"
+      reversed={true}
+    />
 
-  <section class="py-24 bg-white text-center">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-8">Un besoin spécifique ?</h2>
-      <a href="/contact/" class="inline-block border-2 border-primary text-primary font-bold px-8 py-4 rounded-xl hover:bg-primary/5 transition-colors">
-        Contactez-nous
-      </a>
-    </div>
+    <Feature
+      title="Data & Reporting"
+      description="Nettoyage, consolidation et visualisation de vos données. Prenez des décisions basées sur des chiffres fiables, pas sur l'intuition."
+      button={{ text: "Demander un audit data", link: "/contact/" }}
+      image="/images/feature/feature-card-three.png"
+      image_alt="Data et Reporting"
+    />
+  </div>
+
+  <section class="py-24 bg-primary/5 text-center">
+    <a href="/contact/" class="inline-block bg-primary text-white font-bold px-8 py-4 rounded-xl hover:bg-primary/90 transition-colors">
+      Demander un échange
+    </a>
   </section>
 </Layout>

@@ -1,0 +1,13 @@
+<svg width="240" height="40" viewBox="0 0 240 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0, 0)">
+    <rect width="40" height="40" rx="8" fill="white" fill-opacity="0.1"/>
+    <path d="M12 30V10H28" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M24 6L28 10L24 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M12 20H22" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M20 17L23 20L20 23" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M10 26L13 24L11 28L14 26" fill="white"/>
+  </g>
+  <text x="50" y="27" fill="white" style="font-family: sans-serif; font-weight: 800; font-size: 20px; letter-spacing: -0.5px;">
+    La Fabrique à Flux
+  </text>
+</svg>

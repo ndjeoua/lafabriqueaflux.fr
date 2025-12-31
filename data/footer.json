@@ -1,48 +1,35 @@
 {
-  "logo": "/images/footer-logo.svg",
-  "logo_alt": "MyCompany Logo",
+  "logo": "/images/logo-white.svg",
+  "logo_alt": "La Fabrique à Flux",
   "logo_url": "/",
-  "copyright": "MyCompany. All rights reserved.",
+  "copyright": "La Fabrique à Flux. Tous droits réservés.",
   "sections": [
     {
-      "title": "Main Pages",
+      "title": "Navigation",
       "links": [
         {
-          "text": "Home",
+          "text": "Accueil",
           "link": "/"
         },
         {
-          "text": "Features",
-          "link": "/features/"
+          "text": "Services",
+          "link": "/services/"
         },
         {
-          "text": "Price",
-          "link": "/pricing/"
+          "text": "Projets",
+          "link": "/projets/"
         },
-        {
-          "text": "About",
-          "link": "/about/"
-        }
-      ]
-    },
-    {
-      "title": "Community",
-      "links": [
-        {
-          "text": "Blog",
-          "link": "/blog/"
-        },
-        {
-          "text": "RSS Feed",
-          "link": "/feed.xml"
-        }
-      ]
-    },
-    {
-      "title": "Company",
-      "links": [
         {
           "text": "Contact",
+          "link": "/contact/"
+        }
+      ]
+    },
+    {
+      "title": "Légal",
+      "links": [
+        {
+          "text": "Mentions Légales",
           "link": "/contact/"
         }
       ]

@@ -1,57 +1,70 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import SimpleHero from "@components/global/simple-hero/simple-hero.astro";
-import Feature from "@components/global/feature/feature.astro";
 ---
 
-<Layout title="Nos Projets">
+<Layout title="Projets | La Fabrique à Flux">
   <SimpleHero
-    title="Nos Projets"
-    description="Une approche structurée, orientée résultats, pour répondre à vos besoins métiers."
+    title="Études de cas"
+    description="Découvrez comment nous aidons les entreprises à transformer leurs opérations par l'automatisation."
   />
 
-  <section class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Card 1 -->
-        <div class="flex flex-col bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
-          <div class="h-48 bg-primary/10 flex items-center justify-center italic text-primary font-bold">Relance Factures</div>
-          <div class="p-6 flex-1 flex flex-col">
-            <h3 class="text-xl font-bold mb-4">Relances factures automatisées</h3>
-            <p class="text-gray-600 mb-6 flex-1">Problème : Trésorerie bloquée et temps perdu. Solution : Workflow intelligent identifiant les retards et relançant automatiquement via Brevo.</p>
-            <a href="/services/relance-factures/" class="text-primary font-bold hover:underline italic">Voir le projet →</a>
-          </div>
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      <!-- Projet 1 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="h-64 bg-primary/10 rounded-3xl flex items-center justify-center text-primary font-black text-2xl uppercase italic">Relance Auto</div>
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Relances factures automatisées (SaaS B2B)</h3>
+          <p class="text-gray-600 mb-6 font-bold italic underline">Problème : 15h par mois perdues en relances manuelles.</p>
+          <p class="text-gray-600 mb-4">Solution : Mise en place d'un workflow n8n connecté à l'outil de gestion, orchestration d'emails via Brevo et dashboard de suivi sur Supabase.</p>
+          <ul class="space-y-2 text-gray-600 mb-6">
+            <li>• Scénarios automatiques J+3 / J+10 / J+30</li>
+            <li>• Gestion automatique des paiements reçus</li>
+            <li>• Alerte immédiate si litige détecté</li>
+          </ul>
+          <p class="font-bold text-primary italic">Résultat : Zéro oubli de relance et +12% de trésorerie récupérée dès le 2e mois.</p>
         </div>
+      </div>
 
-        <!-- Card 2 -->
-        <div class="flex flex-col bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
-          <div class="h-48 bg-primary/10 flex items-center justify-center italic text-primary font-bold">Data & Reporting</div>
-          <div class="p-6 flex-1 flex flex-col">
-            <h3 class="text-xl font-bold mb-4">Automatisation data & reporting</h3>
-            <p class="text-gray-600 mb-6 flex-1">Problème : Données éparpillées et rapports manuels. Solution : Centralisation dans Supabase et dashboards de suivi automatisés.</p>
-            <span class="text-primary/50 font-bold italic">En cours</span>
-          </div>
+      <!-- Projet 2 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="lg:order-2 h-64 bg-primary/10 rounded-3xl flex items-center justify-center text-primary font-black text-2xl uppercase italic">Onboarding 2.0</div>
+        <div class="lg:order-1">
+          <h3 class="text-2xl font-bold mb-4">Automatisation Onboarding Client</h3>
+          <p class="text-gray-600 mb-6 font-bold italic underline">Problème : Processus d'accueil client lourd et désordonné.</p>
+          <p class="text-gray-600 mb-4">Solution : Création d'un flux automatisant la création du dossier CRM, l'envoi des accès, la génération du contrat et la notification Slack de l'équipe.</p>
+          <ul class="space-y-2 text-gray-600 mb-6">
+            <li>• Connexion Airtable + Docusign + Slack</li>
+            <li>• Guide de bienvenue personnalisé envoyé par email</li>
+            <li>• Création automatique d'un espace client partagé</li>
+          </ul>
+          <p class="font-bold text-primary italic">Résultat : Temps de traitement divisé par 4 et une image de marque renforcée.</p>
         </div>
+      </div>
 
-        <!-- Card 3 -->
-        <div class="flex flex-col bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
-          <div class="h-48 bg-primary/10 flex items-center justify-center italic text-primary font-bold">Workflows Métiers</div>
-          <div class="p-6 flex-1 flex flex-col">
-            <h3 class="text-xl font-bold mb-4">Workflows métiers sur mesure</h3>
-            <p class="text-gray-600 mb-6 flex-1">Problème : Processus internes lourds et sans visibilité. Solution : Orchestration de vos outils existants via n8n.</p>
-            <span class="text-primary/50 font-bold italic">En cours</span>
-          </div>
+      <!-- Projet 3 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="h-64 bg-primary/10 rounded-3xl flex items-center justify-center text-primary font-black text-2xl uppercase italic">Data Intelligence</div>
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Nettoyage & Consolidation Data</h3>
+          <p class="text-gray-600 mb-6 font-bold italic underline">Problème : Données clients incohérentes sur 3 plateformes différentes.</p>
+          <p class="text-gray-600 mb-4">Solution : Développement d'un script d'harmonisation (ETL) pour dédoublonner les contacts et enrichir la base via des API externes.</p>
+          <ul class="space-y-2 text-gray-600 mb-6">
+            <li>• Suppression de 15% de doublons inutiles</li>
+            <li>• Mise à jour automatique des Siret / adresses</li>
+            <li>• Export prêt pour la prospection commerciale</li>
+          </ul>
+          <p class="font-bold text-primary italic">Résultat : Taux de conversion mailing +8% grâce à une base saine.</p>
         </div>
       </div>
     </div>
   </section>
 
   <section class="py-24 bg-primary text-white text-center">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-8 italic">Votre projet pourrait être ici</h2>
-      <a href="/contact/" class="inline-block bg-white text-primary font-bold px-8 py-4 rounded-xl hover:bg-gray-100 transition-colors">
-        Lancer mon projet
-      </a>
-    </div>
+    <h2 class="text-3xl font-bold mb-8">Votre projet est le suivant.</h2>
+    <a href="/contact/" class="inline-block bg-white text-primary font-bold px-8 py-4 rounded-xl hover:bg-gray-100 transition-colors">
+      Décrire mon besoin
+    </a>
   </section>
 </Layout>

@@ -2,79 +2,125 @@
 import Layout from "@layouts/Layout.astro";
 import Hero from "@components/global/hero/hero.astro";
 import Feature from "@components/global/feature/feature.astro";
-import Counter from "@components/global/counter/counter.astro";
 ---
 
-<Layout title="Accueil">
+<Layout title="Automatisation & Relances">
   <Hero
     title="Automatisez vos processus. Accélérez votre cash."
     description="Relances factures, automatisations data & workflows sur mesure — sans complexité."
     button={{ text: "Demander un échange", link: "/contact/" }}
-    image="/images/hero/hero-image.avif"
-    image_alt="Illustration Automatisation"
+    image="/images/hero-flow.svg"
+    image_alt="Illustration d’un flux automatisé : plus simple, plus rapide, moins d’erreurs"
   />
 
-  <section class="py-16 bg-white">
+  <!-- Section 1: Problèmes (Pain Points) -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 italic">Libérez-vous des freins opérationnels</h2>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-8 bg-gray-50 rounded-2xl border border-gray-100">
+        <div class="text-primary text-3xl mb-4 font-bold">01.</div>
+        <h3 class="text-xl font-bold mb-4">Relances manuelles chronophages</h3>
+        <p class="text-gray-600">Perdre des heures à vérifier qui a payé et envoyer des emails un par un n'est plus une option.</p>
+      </div>
+      <div class="p-8 bg-gray-50 rounded-2xl border border-gray-100">
+        <div class="text-primary text-3xl mb-4 font-bold">02.</div>
+        <h3 class="text-xl font-bold mb-4">Erreurs & fichiers dispersés</h3>
+        <p class="text-gray-600">Les doublons, les oublis et les données éparpillées entre Excel et vos outils créent du chaos.</p>
+      </div>
+      <div class="p-8 bg-gray-50 rounded-2xl border border-gray-100">
+        <div class="text-primary text-3xl mb-4 font-bold">03.</div>
+        <h3 class="text-xl font-bold mb-4">Absence de visibilité</h3>
+        <p class="text-gray-600">Sans suivi centralisé, il est impossible de prévoir votre trésorerie avec précision.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Solutions -->
+  <section class="py-20 bg-primary/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+      <h2 class="text-3xl font-bold text-center">Ce que nous mettons en place</h2>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-2xl shadow-sm">
+        <h4 class="text-lg font-bold text-primary mb-2">Relances factures</h4>
+        <p class="text-gray-600 mb-4">Systèmes automatisés compatibles Brevo pour sécuriser vos paiements sans effort.</p>
+        <a href="/services/relance-factures/" class="text-sm font-bold hover:underline italic">En savoir plus →</a>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-sm">
+        <h4 class="text-lg font-bold text-primary mb-2">Workflows & Logiciels</h4>
+        <p class="text-gray-600 mb-4">Interconnexion de vos outils via n8n pour supprimer les tâches répétitives.</p>
+        <a href="/services/" class="text-sm font-bold hover:underline italic">Voir les services →</a>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-sm">
+        <h4 class="text-lg font-bold text-primary mb-2">Data & Reporting</h4>
+        <p class="text-gray-600 mb-4">Nettoyage et consolidation de vos données pour des décisions éclairées.</p>
+        <a href="/contact/" class="text-sm font-bold hover:underline italic">Demander un audit →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Comment ça marche -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-16">Comment ça marche ?</h2>
+      <div class="space-y-12">
+        <div class="flex flex-col md:flex-row items-center gap-8 text-left">
+          <div class="w-16 h-16 shrink-0 bg-primary text-white rounded-full flex items-center justify-center font-bold text-2xl shadow-lg shadow-primary/20">1</div>
+          <div>
+            <h4 class="text-xl font-bold">Audit express</h4>
+            <p class="text-gray-600">Mapping de vos processus actuels et identification des points de friction.</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-8 text-left">
+          <div class="w-16 h-16 shrink-0 bg-primary text-white rounded-full flex items-center justify-center font-bold text-2xl shadow-lg shadow-primary/20">2</div>
+          <div>
+            <h4 class="text-xl font-bold">Automatisation</h4>
+            <p class="text-gray-600">Configuration, tests en environnement sécurisé et validation de vos flux.</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-8 text-left">
+          <div class="w-16 h-16 shrink-0 bg-primary text-white rounded-full flex items-center justify-center font-bold text-2xl shadow-lg shadow-primary/20">3</div>
+          <div>
+            <h4 class="text-xl font-bold">Mise en production</h4>
+            <p class="text-gray-600">Lancement officiel, suivi des indicateurs et amélioration continue.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Bénéfices (Stats) -->
+  <section class="py-20 bg-primary text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="p-6 bg-primary/5 rounded-xl border border-primary/10">
-          <h3 class="text-xl font-bold mb-4 text-primary">Moins d’impayés</h3>
-          <p class="text-gray-600">Relances automatiques et cadrées pour sécuriser votre trésorerie.</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center uppercase tracking-widest text-sm font-bold">
+        <div>
+          <div class="text-4xl mb-2">10h+</div>
+          <div class="opacity-80">Temps gagné / sem</div>
         </div>
-        <div class="p-6 bg-primary/5 rounded-xl border border-primary/10">
-          <h3 class="text-xl font-bold mb-4 text-primary">Moins de tâches répétitives</h3>
-          <p class="text-gray-600">Workflows n8n et intégrations pour libérer votre temps.</p>
+        <div>
+          <div class="text-4xl mb-2">-90%</div>
+          <div class="opacity-80">D'erreurs de saisie</div>
         </div>
-        <div class="p-6 bg-primary/5 rounded-xl border border-primary/10">
-          <h3 class="text-xl font-bold mb-4 text-primary">Plus de visibilité</h3>
-          <p class="text-gray-600">Suivi en temps réel et reporting clair sur vos opérations.</p>
+        <div>
+          <div class="text-4xl mb-2">100%</div>
+          <div class="opacity-80">Relances suivies</div>
+        </div>
+        <div>
+          <div class="text-4xl mb-2">24h</div>
+          <div class="opacity-80">Visibilité data</div>
         </div>
       </div>
     </div>
   </section>
 
-  <Feature
-    title="Service phare : Relances factures automatisées"
-    description="Ne perdez plus de temps à courir après vos paiements. Nos systèmes automatisés s'occupent de tout pour vous, avec élégance et efficacité."
-    button={{ text: "Découvrir", link: "/services/relance-factures/" }}
-    image="/images/feature/feature-card-one.png"
-    image_alt="Relance Factures"
-  />
-
-  <section class="py-16 bg-primary/5">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl font-bold mb-12 text-primary">Comment ça marche</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div>
-          <div class="text-4xl font-bold text-primary/20 mb-4">01</div>
-          <h4 class="text-xl font-bold mb-2">Audit rapide</h4>
-          <p class="text-gray-600">Analyse de vos flux actuels.</p>
-        </div>
-        <div>
-          <div class="text-4xl font-bold text-primary/20 mb-4">02</div>
-          <h4 class="text-xl font-bold mb-2">Mise en place</h4>
-          <p class="text-gray-600">Configuration de vos automatisations.</p>
-        </div>
-        <div>
-          <div class="text-4xl font-bold text-primary/20 mb-4">03</div>
-          <h4 class="text-xl font-bold mb-2">Optimisation & suivi</h4>
-          <p class="text-gray-600">Ajustements pour un résultat maximal.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-16 bg-white border-y border-gray-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <p class="text-lg text-gray-600 italic">"Approche structurée, orientée résultats. Intégration Brevo + outils existants."</p>
-    </div>
-  </section>
-
-  <section class="py-24 bg-primary text-white text-center">
+  <!-- Section final CTA -->
+  <section class="py-24 bg-white border-t border-gray-100 text-center">
     <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold mb-8 italic">Parlons de votre besoin</h2>
-      <a href="/contact/" class="inline-block bg-white text-primary font-bold px-8 py-4 rounded-xl hover:bg-gray-100 transition-colors">
-        Demander un échange
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 italic">On en parle 15 minutes ?</h2>
+      <a href="/contact/" class="inline-block bg-primary text-white font-bold px-10 py-5 rounded-2xl hover:bg-primary/90 transition-all transform hover:scale-105 shadow-xl shadow-primary/20">
+        Prendre contact
       </a>
     </div>
   </section>
