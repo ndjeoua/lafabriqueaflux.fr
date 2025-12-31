@@ -249,13 +249,13 @@ const { address, phone, email, form } = Astro.props;
                   data.page_url = window.location.href;
                   data.user_agent = navigator.userAgent;
                   data.submitted_at = new Date().toISOString();
+                  data.form_token = FORM_TOKEN; // Token envoyé dans le body plutôt que le header
 
                   try {
                     const response = await fetch(N8N_WEBHOOK_URL, {
                       method: 'POST',
                       headers: {
-                        'Content-Type': 'application/json',
-                        'X-Form-Token': FORM_TOKEN
+                        'Content-Type': 'application/json'
                       },
                       body: JSON.stringify(data)
                     });
